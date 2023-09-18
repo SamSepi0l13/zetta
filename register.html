@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Dark / Light</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link id="stylesheet" rel="stylesheet" href="styles/light.css">
+    <link id="stylesheet" rel="stylesheet" href="styles/dark.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    
+
+    <main id="container">
+        <form action="cadastro.php" id="login_form">
+            <div id="form_header">
+                <h1 style="font-size: 25px;">
+                    Registrar
+                </h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        <p>Nome</p>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="email">
+                        <p>Email</p>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="password">
+                        <p>Senha</p>
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="forgot_password">
+                <a href="fpass.html">
+                    Esqueceu sua senha ?
+                </a>
+            </div>
+
+            <div id="create_account">
+                <a href="index.html">
+                    Já tem uma conta?
+                </a>
+            </div>
+
+            <button type="submit">   
+                Cadastrar !                
+            </button>
+        </form>
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+        
+</body>
+</html>

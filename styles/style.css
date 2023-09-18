@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --color-light-50: #f8fafc;
+
+    --color-dark-50:#797984 ;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+/* Estilos para a tela de carregamento */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Defina a largura aqui */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Altere a cor de fundo e ajuste a transparência conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 5px solid var(--color-dark-100);
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login_form {
+/* Estilo CSS inicial para ocultar o formulário */
+    display: none;
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    border-radius: 7px; /* Raio do border-radius */
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff; /* Sombra do formulário */
+    padding: 40px;
+    text-align: center;
+
+}
+
+button {
+    margin: 0 auto; /* Centraliza o botão horizontalmente dentro do formulário */
+    cursor: pointer;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+button:hover {
+    color: #ffffff;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, gray 0%, var(--color-dark-100) 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+    color: white;
+   }
+
+#form_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+#form_header h1{
+    font-size: 45px;
+}
+
+#social_media img{
+    width: 35px;
+}
+
+.input-box p {
+    font-size: 16px;
+    text-align: left;
+}
+
+#forgot_password{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: black;
+}
+
+#forgot_password a{
+    text-decoration: none;
+    color: var(--color-dark-900);   
+}
+
+#forgot_password a:hover{
+    text-decoration: underline;
+}
+
+#create_account {
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#create_account a{
+    text-decoration: none;
+    color: var(--color-dark-900);
+}
+
+
+#create_account a:hover{
+    text-decoration: underline;
+}
+
