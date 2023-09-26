@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recuperar Senha</title>
     <link rel="stylesheet" href="styles/fpass/fpass.css">
 </head>
 <body>
-    <form action="recuperar.php" method="post" enctype="multipart/form-data>">
+    <form action="login.html" method="post" enctype="multipart/form-data">
         <div class="form-container">
             <div class="logo-container">
               Recuperar Senha
@@ -15,7 +15,7 @@
             <form class="form">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+                <input type="text" id="email" name="email" placeholder="Insira seu email" required="">
               </div>
               <button class="form-submit-btn" type="submit">Enviar email de recuperação</button>
             </form>
@@ -24,6 +24,12 @@
               <a href="register.html" class="signup-link link"> Registre-se Agora</a>
             </p>
           </div>
+          
+          <div id="confirmation" class="confirmation">
+            Email de recuperação enviado com sucesso!
+        </div>
     </form>
 </body>
+<script src="./js/esqueciasenha.js"></script>
+
 </html>

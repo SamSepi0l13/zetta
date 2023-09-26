@@ -3,52 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Dark / Light</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link id="stylesheet" rel="stylesheet" href="styles/light.css">
-    <link id="stylesheet" rel="stylesheet" href="styles/dark.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles/./register/register.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
 <body>
-
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Inicio</a>
+                            </li>       
+                            <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="loader-container">
         <div class="loader"></div>
     </div>
 
-    
-
     <main id="container">
-        <form action="cadastro.php" id="login_form">
+        <form action="login.html" id="login_form">
             <div id="form_header">
-                <h1 style="font-size: 25px;">
-                    Registrar
-                </h1>
-                <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
 
-            <div id="inputs">
-                <div class="input-box">
-                    <label for="name">
-                        <p>Nome</p>
-                        <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name">
-                        </div>
-                    </label>
+            <div class="sec1">
+                <div id="inputs">
+                    <div class="input-box">
+                        <label for="name">
+                            <p>Nome</p>
+                            <div class="input-field">
+                                <input type="text" id="name" name="name" required minlength="15" autocomplete="name" maxlength="50">
+                            </div>
+                        </label>
+                    </div>
                 </div>
-            </div>
-
-            <div id="inputs">
-                <div class="input-box">
-                    <label for="email">
-                        <p>Email</p>
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" id="email" name="email">
-                        </div>
-                    </label>
+                <div id="inputs">
+                    <div class="input-box">
+                        <label for="email">
+                            <p>Email</p>
+                            <div class="input-field">
+                                <input type="email" id="email" name="email" required minlength="20" autocomplete="email" maxlength="50">
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -57,8 +77,62 @@
                     <label for="password">
                         <p>Senha</p>
                         <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required minlength="8" maxlength="16">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="street">
+                        <p>Rua</p>
+                        <div class="input-field">
+                            <input type="text" id="street" name="street" autocomplete="address-level1" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="neighborhood">
+                        <p>Bairro</p>
+                        <div class="input-field">
+                            <input type="text" id="neighborhood" name="neighborhood" autocomplete="address-level2" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="city">
+                        <p>Cidade</p>
+                        <div class="input-field">
+                            <input type="text" id="city" name="city" autocomplete="address-level2" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="house_number">
+                        <p>Número da Casa</p>
+                        <div class="input-field">
+                            <input type="text" id="house_number" name="house_number" autocomplete="address-level3" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="complement">
+                        <p>Complemento</p>
+                        <div class="input-field">
+                            <input type="text" id="complement" name="complement" required>
                         </div>
                     </label>
                 </div>
@@ -66,25 +140,23 @@
 
             <div id="forgot_password">
                 <a href="fpass.html">
-                    Esqueceu sua senha ?
+                    Esqueceu sua senha?
                 </a>
             </div>
 
             <div id="create_account">
                 <a href="index.html">
-                    Já tem uma conta?
+                    Já tem uma conta?
                 </a>
             </div>
 
             <button type="submit">   
-                Cadastrar !                
+                Cadastrar!                
             </button>
+
         </form>
-
-
     </main>
 
     <script src="js/script.js"></script>
-        
 </body>
 </html>

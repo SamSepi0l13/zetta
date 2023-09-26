@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B);
 
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .form-container {
@@ -110,5 +112,33 @@
   .form-container .link:hover {
     text-decoration: underline;
   }
-  
+
+ /* Modifique o CSS do pop-up (classe .confirmation) */
+  .confirmation {
+  display: none;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed; /* Altere para 'fixed' para posicionar acima de tudo */
+  top: 10px; /* Ajuste a posição vertical como desejado */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001; /* Aumente o z-index para ficar acima do container */
+  border-radius: 5px;
+  animation: fadeOut 3s ease-in-out;
+  }
+
+  /* O restante do seu CSS permanece inalterado */
+
+
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
   

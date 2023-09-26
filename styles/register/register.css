@@ -61,8 +61,10 @@
 #login_form {
 /* Estilo CSS inicial para ocultar o formulário */
     display: none;
+    margin-top: 50px;
     background-color: #ffffff; /* Cor de fundo do formulário */
     border-radius: 7px; /* Raio do border-radius */
+    width: 90%;
     box-shadow: 6px 6px 12px #c5c5c5,
                 -6px -6px 12px #ffffff; /* Sombra do formulário */
     padding: 40px;

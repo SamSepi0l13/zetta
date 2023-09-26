@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link id="stylesheet" rel="stylesheet" href="styles/light.css">
-    <link id="stylesheet" rel="stylesheet" href="styles/dark.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/mpmpm/uM4p/q18f/y143m28/h6Y7s/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/mediaquery/responsive.css">
     
 </head>
 
@@ -23,7 +21,6 @@
         <form action="config.php" id="login_form">
             <div id="form_header">
                 <h1>Entrar</h1>
-                <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
 
             <div id="inputs">
@@ -31,8 +28,7 @@
                     <label for="name">
                         <p>Usuário</p>
                         <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name" placeholder="Nome">
+                            <input type="text" id="name" name="name" placeholder="Usuário" required minlength="20" autocomplete="email" maxlength="50">
                         </div>
                     </label>
                 </div>
@@ -43,8 +39,7 @@
                     <label for="password">
                         <p>Senha</p>
                         <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" id="password" name="password" placeholder="Senha">
+                            <input type="password" id="password" name="password" placeholder="Senha" required minlength="8" maxlength="16" autocomplete="new-password">
                         </div>
                     </label>
                 </div>
@@ -67,10 +62,7 @@
             </button>
         </form>
 
-
+        <script src="js/script.js"></script>
     </main>
-
-    <script src="js/script.js"></script>
-
 </body>
 </html>
